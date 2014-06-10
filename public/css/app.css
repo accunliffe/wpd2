@@ -1,18 +1,12 @@
 /* app css stylesheet */
 
-body {
-  padding-top:70px;
-}
+
 .header-unit {
   height: 1100px;
-  border: 2px solid #000;
-  border-right:none;
-  border-left: none;
   position: relative;
-  padding: 20px;
 }
 #video-container {
-  position: absolute;
+  position: relative;
 }
 #video-container {
   top:0%;
@@ -23,10 +17,16 @@ body {
 }
 video {
   position:absolute;
-  z-index:0;
+  z-index:1;
 }
 video.fillWidth {
   width: 100%;
 }
 
-  
+.toptext {
+  z-index:0;
+  border-radius: 25px;
+  border-width: 5px;
+  position: relative;
+  text-align: center;
+}
