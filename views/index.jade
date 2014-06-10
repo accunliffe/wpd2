@@ -2,15 +2,11 @@ extends layout
 
 block body
   .header-unit
-    #video-container this is a div
-      video.fillWidth(autoplay='', loop='')        
+    #video-container
+      video.fillWidth(autoplay='', loop='')
         source(src='/videos/dance.mp4', type='video/mp4')
         source(src='/videos/dance.ogg', type='video/ogg')
-        source(src='/videos/dance.webm', type='video/webm')      
-        | Your browser does not support the video tag. I suggest you upgrade your browser.
-    // end video-container
-  // end .header-unit
-
+        source(src='/videos/dance.webm', type='video/webm')
   .navbar.navbar-default(role="navigation")
     .navbar-header
       button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
