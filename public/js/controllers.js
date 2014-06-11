@@ -12,9 +12,9 @@ function AppCtrl($scope, $http) {
   });
 }
 
-function MyCtrl1() {}
+function MyCtrl1() { 
+}
 MyCtrl1.$inject = [];
-
 
 function MyCtrl2() {
 }
@@ -27,3 +27,8 @@ MyCtrl3.$inject = [];
 function MyCtrl4() {
 }
 MyCtrl4.$inject = [];
+
+function floatCtrl($scope) {
+  $scope.floater = false;
+  console.log('is this shit working?')
+}
