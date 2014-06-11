@@ -2,9 +2,9 @@ extends layout
 
 block body
   .getdown-top#nav(ng-controller='floatCtrl')
-    a.main-nav.img-rounded(href='#main', du-smooth-scroll duration='1100', du-scrollspy='', offset='', ng-click='floater = !floater', collapse = 'floater')
-      .floating-logo.atomic-bomb-on-the-icon  
-  .header-unit    
+    a.main-nav.img-rounded(href='#main', du-smooth-scroll duration='1100', du-scrollspy='', offset='', ng-click='dude()', collapse = 'floater',ng-hide='clicked')
+      .floating-logo.atomic-bomb-on-the-icon
+  .header-unit
     #video-container
      video.fillWidth(autoplay='', loop='')
       source(src='/videos/dance.mp4', type='video/mp4')
@@ -17,20 +17,20 @@ block body
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href="http://whitepeopledancing.com/") WPD    
+      a.navbar-brand(href="http://whitepeopledancing.com/") WPD
     .collapse.navbar-collapse.navbar-ex1-collapse
       ul.nav.navbar-nav
         li
           a(href="view1") All
-        li  
-          a(href="view2") Videos 
-        li  
+        li
+          a(href="view2") Videos
+        li
           a(href="view3") MEMEs
-        li  
+        li
           a(href="view4") Pics
-  .content      
+  .content
     div(ng-controller='AppCtrl')
-      .jumbotron  
+      .jumbotron
         h1 White People Dancing
       div(ng-view)
   .container2
