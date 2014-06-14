@@ -37,8 +37,8 @@ video.fillWidth {
   position: fixed;
   background-color: rgba(255,255,255,0.01);
   opacity: 0.99;
-  padding-left: 75%;
-  padding-top: 5%;
+  padding-left: 40%;
+  padding-top: 30%;
   height: auto;
   width: auto;
 }
