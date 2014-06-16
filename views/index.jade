@@ -1,15 +1,22 @@
 extends layout
 
 block body
-  .getdown-top#nav(ng-controller='floatCtrl')
-    a.main-nav(href='#main', du-smooth-scroll duration='1100', du-scrollspy='', offset='', ng-click='dude()', collapse = 'floater',ng-hide='clicked')
-      h1#neon-tubing wan<span>n</span>a
-  .header-unit    
-    #video-container
-     video.fillWidth(autoplay='', loop='')
-      source(src='/videos/dance.mp4', type='video/mp4')
-      source(src='/videos/dance.ogg', type='video/ogg')
-      source(src='/videos/dance.webm', type='video/webm')
+  .top-wrapper
+    .getdown-top(ng-controller='floatCtrl')
+      a.main-nav(href='#main', du-smooth-scroll duration='1100', du-scrollspy='', offset='', ng-click=' dude()', collapse = 'floater',ng-hide='clicked')
+        .neon
+          span.a WAN
+          span.a.out N
+          span.a A
+          span.a  DA
+          span.a.out NC
+          span.a E?
+    .header-unit    
+      #video-container
+      video.fillWidth(autoplay='', loop='')
+        source(src='/videos/dance.mp4', type='video/mp4')
+        source(src='/videos/dance.ogg', type='video/ogg')
+        source(src='/videos/dance.webm', type='video/webm')
   .navbar.navbar-default#main(role="navigation")
     .navbar-header
       button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
@@ -30,8 +37,7 @@ block body
           a(href="view4") Pics
   .content
     div(ng-controller='AppCtrl')
-      .jumbotron
-        h1 White People Dancing
+      .jumbotron        
       div(ng-view)
   .container2
   script(src='js/lib/angular/angular.js')
