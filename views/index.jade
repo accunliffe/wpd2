@@ -3,13 +3,14 @@ extends layout
 block body
   .top-wrapper
     .getdown-top(ng-controller='floatCtrl')
-      a.main-nav.neon(href='#main', du-smooth-scroll duration='1100', du-scrollspy='', offset='', ng-click=' dude()', ng-hide='clicked')
-        span.on WAN
-        span.on.out N
-        span.on A
-        span.on  DA
-        span.on.out NC
-        span.on E?          
+      a.main-nav(href='#main', du-smooth-scroll duration='1100', du-scrollspy='', offset='', ng-click=' dude()', ng-hide='clicked')
+        .neon
+          span.on WAN
+          span.on.out N
+          span.on A
+          span.on  DA
+          span.on.out NC
+          span.on E?          
     .header-unit    
       #video-container
       video.fillWidth(autoplay='', loop='')
@@ -36,7 +37,15 @@ block body
           a(href="view4") Pics
   .content
     div(ng-controller='AppCtrl')
-      .jumbotron        
+      .jumbotron.blackground
+        .neon
+          span.on Whi
+          span.on.out te
+          span.on  peo
+          span.on.out ple
+          span.on  dan
+          span.on.out ci
+          span.on ng                
       div(ng-view)
   .container2
   script(src='js/lib/angular/angular.js')
