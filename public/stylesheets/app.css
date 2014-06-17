@@ -152,7 +152,7 @@ a.main-nav {
   text-decoration: none;
 }
 .on {
-    -moz-animation: neonglow 10s infinite;
+    -moz-animation: neonglow 8s infinite;
     -ms-animation: neonglow 10s infinite;
     -webkit-animation: neonglow 10s infinite;
     color: #000;
@@ -168,6 +168,10 @@ a.main-nav {
 
 #main {
   width: 100%;
+}
+.contentdisplay {
+  height: 800px;
+  background-color: #fff;
 }
 .footy {
   z-index: 1;
