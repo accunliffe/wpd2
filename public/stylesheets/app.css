@@ -40,7 +40,7 @@ video.fillWidth {
 }
 a.main-nav {
   z-index: 1;
-  position: relative;
+  position: fixed;
   display: block;
   min-height: auto;
   width: 100%;
@@ -141,7 +141,14 @@ a.main-nav {
 .neon2 {
   font-family: 'ostrich_sansbold';
   text-align: center;
-  font-size: 200%;
+  font-size: 300%;
+  text-decoration: none;
+}
+.neon3 {
+  padding-top: 120px;
+  font-family: 'ostrich_sansbold';
+  text-align: right;
+  font-size: 300%;
   text-decoration: none;
 }
 .on {
@@ -161,4 +168,14 @@ a.main-nav {
 
 #main {
   width: 100%;
+}
+.footy {
+  z-index: 1;
+  position: relative;
+  display: block;
+  min-height: 200px;
+  max-height: 200px;
+  width: 100%;
+  font-family: 'ostrich_sansbold';
+  text-decoration: none;
 }
