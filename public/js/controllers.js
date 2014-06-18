@@ -34,7 +34,7 @@ function floatCtrl($scope) {
   $scope.dude = function(){$scope.clicked = true;};
 }
 
-var ModalDemoCtrl = function ($scope, $modal, $log) {
+function ModalDemoCtrl($scope, $modal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
 
